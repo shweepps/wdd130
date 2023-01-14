@@ -1,9 +1,8 @@
-body {
-    text-align: center;
-}
-nav {
+
+nav, footer {
     background-color: rgb(50, 42, 59);
     padding: 10px;
+    text-align: center;
 }
 a {
     color: white;
@@ -12,17 +11,38 @@ a {
 }
 h1, h2 {
     color: steelblue;
+    text-align: center;
 }
 
 img {
     width: 800px;
     border: 4px solid steelblue;
+    display: block;
+    border: 0 auto;
 }
 
 p {
     padding: 10px;
+    text-align: center;
 }
 #active {
     background-color: white;
     color: steelblue;
+}
+
+a:hover{
+    background-color: white;
+    color: steelblue;
+}
+img{
+    width: 30%;
+    border: 4px solid steelblue;
+}
+a{
+    font-size: 1.5em;
+    color: white;
+    margin: 40px;
+    line-height: 1.5em;
+
+
 }
