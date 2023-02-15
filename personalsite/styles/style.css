@@ -243,6 +243,21 @@ footer a:hover {
     width: 50px;
     height: 50px;
   }
+
+  form {
+    border: 2px solid #ccc;
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #223e465e;
+    padding-right: 50px;
+    margin-left: 250px;
+  }
+  
+  form label, form input, form select {
+    margin: 10px;
+  }
 ::-webkit-scrollbar {
     height: 15px;
   }
@@ -385,6 +400,66 @@ q {
     font-style: italic;
     font-weight: 2px;
 }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropbtn {
+    background-color: #6615152a;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+  }
+  
+  .dropdown-content a:hover {
+    color: #000000;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgb(206, 206, 223);
+  }
+  
+  .dropdown:focus-within .dropdown-content:hover ul {
+    display: block;
+    background-color: blue;
+    color: rgb(83, 19, 19);
+  }
+.payment{
+    margin-left: 250px;
+}
+
+
+.payment ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  
+
+ 
+  
 
 
 

@@ -48,7 +48,35 @@
         
            
         </div>
+        <form action="submit-request.php" method="POST">
+            <h2>Request a Quote</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
         
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        
+            <input type="submit" value="Submit Request">
+        </form>
+        <div class="payment">
+            <h2>Payment Options</h2>
+            <p>To make a payment for our services, please use one of the following options:</p>
+            <div class="dropdown">
+              <button class="dropbtn">Payment Methods</button>
+              <div class="dropdown-content">
+                <a href="#">PayPal</a>
+                <a href="#">Credit Card</a>
+                <a href="#">Bank Transfer</a>
+              </div>
+            </div>
+            <p>Please contact us for more information on payment options.</p>
+          </div>
        
         
       
