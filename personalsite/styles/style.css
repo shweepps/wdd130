@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Source+Sans+Pro&display=swap');
 /*font-family: 'Quicksand', 'Verdana', sans-serif;
 font-family: 'Trade Winds', 'Optima', cursive;*/
 
@@ -9,7 +9,7 @@ font-family: 'Trade Winds', 'Optima', cursive;*/
 }
 
 body {
-    font-family: "Hind Guntur", Helvetica, sans-serif;
+    font-family: "McLaren";
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -48,8 +48,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     justify-items: center;
-    background-image:url('images/image.jpg');
-    
+
 }
 #secondary{
     display: grid;
@@ -94,20 +93,53 @@ header{
     width: 100%;
     height: 250px;
 }
+#main-three{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center;
+    
+}
+.img-border{
+    grid-column: 5/5;
+    width: 600px;
+    height: 250px;
+    background-color: #3d4c83;
+    border-radius: 50%;
+    
+}
+
+#img-three{
+    margin-top: 27px ;
+    margin-left: 150px;
+    border: 7px solid #04175a;
+    background-color: #04175a;
+}
 .main-h {
     grid-column: 1 / 11;
     grid-row: 1 / 2;
     text-align: center;
     font-family: "Alegreya Sans SC", "Tahoma", sans-serif;
 }
+.three-h {
+    grid-column: 2 / 9;
+    grid-row: 1 / 2;
+    text-align: center;
+    font-family: "Alegreya Sans SC", "Tahoma", sans-serif;
+}
+
 .ser-h {
     grid-column: 1 / 11;
     grid-row: 1 / 2;
     text-align: center;
     font-family: "Alegreya Sans SC", "Tahoma", sans-serif;
 }
+.three-p{
+    grid-column: 5 / 5;
+    float: left;
+    width: 980px;
 
-.main-p{
+}
+.main-p {
     grid-column: 5 / 5;
     float: left;
     width: 400px;
@@ -115,7 +147,7 @@ header{
 .ser-p{
     grid-column: 2 / 10;
     text-align: center;
-    width: 600px;
+    width: 1200px;
 }
 
 #main-img{
@@ -150,12 +182,6 @@ header{
     
 }
 
-.testimony{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    justify-items: center;
-    border: 1px solid #04175a;  
-}
 
 .test-h{
     grid-column: 1 / 11;
@@ -204,103 +230,105 @@ footer {
     margin-left: 300px;
   }
   
-  footer a {
+footer a {
     color: black;
     text-decoration: none;
   }
   
-  footer a:hover {
+footer a:hover {
     color: #0D6C9E;
   }
   
-  .linkedin, .github, .whatsapp, .facebook{
+.linkedin, .github, .whatsapp, .facebook{
     width: 50px;
     height: 50px;
   }
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     height: 15px;
   }
-  :-webkit-scrollbar-track {
+:-webkit-scrollbar-track {
     background: #4a2180;
     border-radius: 50px;
   }
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #6e93f7;
     border-radius: 100px;
   }
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #223e46;
   }
-  .container {
+.container {
     align-items: center;
     display: flex;
     gap: 12px;
     max-width: 1200px;
     width: 80%;
-    height: 429px;
-    background:rgba(2, 13, 46, 0.541);
+    max-height: 500px;
+    background:rgba(184, 191, 214, 0.438);
     border-radius: 10px;
     padding: 30px;
     padding-top: 50px;
-    margin-left: 80px;
+    margin-left: 100px;
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     scroll-padding: 30px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   }
-  .container .card {
+.container .card {
     display: flex;
     flex: 0 0 96%;
     flex-direction: column;
     align-items: center;
     padding: 30px;
     border-radius: 12px;
-    background: #fff;
+    background: #e9e0e0;
     scroll-snap-align: start;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   }
-  .card .image {
+.card .image {
     height: 150px;
     width: 150px;
     padding: 4px;
     background: #041e64;
     border-radius: 50%;
   }
-  .image img {
+.image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #fff;
   }
-  .card h2 {
+.card h2 {
     margin-top: 25px;
     color: #333;
     font-size: 22px;
     font-weight: 600;
   }
-  .card p {
+.card p {
     margin-top: 4px;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 100;
     color: #333;
     text-align: center;
   }
 
 .slideshow-container {
     position: relative;
-    background: #7a36364f;
-    }
+    background: #270a0a5e;
+    
+}
 
   
-    .mySlides {
+.mySlides {
     display: none;
-    padding: 80px;
+    padding: 0px;
     text-align: center;
-    }
+    font-size: 18px;
+}
 
-    
-    .prev, .next {
+
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -312,29 +340,29 @@ footer {
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    }
+}
 
-    
-    .next {
+
+.next {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
-    }
+}
 
-    .prev:hover, .next:hover {
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
     color: white;
-    }
+}
 
-  
-    .dot-container {
+
+.dot-container {
     text-align: center;
     padding: 20px;
     background: #ddd;
-    }
+}
 
-   
-    .dot {
+
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -343,17 +371,23 @@ footer {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    }
+}
 
-    .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-    }
+}
 
-    
-    q {font-style: italic;}
+.packages-h{
+    text-align: center;
 
-    .author {color: cornflowerblue;}
-  
+}
+q {
+    font-style: italic;
+    font-weight: 2px;
+}
+
+
+
 
 
 
