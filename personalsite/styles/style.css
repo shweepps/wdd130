@@ -445,25 +445,9 @@ q {
   }
 .payment{
     margin-left: 250px;
+    background-color: #33333336;
+    width: 800px;
 }
-
-
-.payment ul {
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-
-  
-
- 
-  
-
-
-
-
 
 
 @media screen and (max-width: 900px) {
