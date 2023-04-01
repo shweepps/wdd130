@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <p>hello</p>
+	<div class="container">
+		<h1>Sentence Generator</h1>
+		<div class="options">
+			<label for="theme-select">Select a theme:</label>
+			<select id="theme-select">
+				<option value="general">General</option>
+				<option value="food">Food</option>
+				<option value="travel">Travel</option>
+			</select>
+
+			<label for="tone-select">Select a tone:</label>
+			<select id="tone-select">
+				<option value="neutral">Neutral</option>
+				<option value="positive">Positive</option>
+				<option value="negative">Negative</option>
+			</select>
+
+			<label for="length-slider">Select a length:</label>
+			<input type="range" id="length-slider" min="1" max="10" value="5">
+		</div>
+
+		<button id="generate-btn">Generate Sentence</button>
+		<h2>Sentences</h2>
+		<p id="sentence"></p>
+
+		
+
+		<div class="favorites">
+			<h2>Favorites</h2>
+			<ul id="favorites-list"></ul>
+			<button id="save-btn">Save Favorite</button>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+
 </body>
 </html>
